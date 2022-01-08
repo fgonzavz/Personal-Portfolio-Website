@@ -1,0 +1,310 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+     :root {
+        --blue: #2980b9;
+        --black: #333;
+        --white: #fff;
+        --light-color: #777;
+        --light-bg: #eee;
+        --box-shadow: 0 5px 10px rgba(0, 0, 0.1);
+    }
+    
+    * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+    
+    html::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    html::-webkit-scrollbar-track {
+        background-color: var(--blue);
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        background-color: var(--white);
+        border-radius: 50px;
+    }
+    
+    .title {
+        font-size: 25px;
+        color: var(--blue);
+        margin-bottom: 15px;
+    }
+    
+    .btn {
+        margin-top: 10px;
+        display: inline-block;
+        padding: 7px 20px;
+        border-radius: 5px;
+        background: var(--blue);
+        color: var(--white);
+        font-size: 17px;
+        box-shadow: var(--box-shadow);
+    }
+    
+    .btn:hover {
+        background: var(--black);
+    }
+    
+    .container {
+        padding: 100px 9%;
+        background: linear-gradient(45deg, deeppink, var(--blue));
+        display: flex;
+    }
+    
+    .container .profile {
+        flex: 1 1 400px;
+        background: var(--white);
+        padding: 30px 20px;
+        text-align: center;
+        position: sticky;
+        top: 20px;
+        left: 0;
+        border-right: 2PX solid var(--black);
+        align-self: flex-start;
+    }
+    
+    .container .profile h3 {
+        color: var(--black);
+        font-size: 20px;
+    }
+    
+    .container .profile p {
+        color: var(--blue);
+        padding: 5px 0;
+        font-size: 20px;
+    }
+    
+    .container .profile .share {
+        margin: 10px 0;
+    }
+    
+    .container .profile .share a {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        border-radius: 50%;
+        color: var(--back);
+        background: var(--light-bg);
+    }
+    
+    .container .profile .share a:hover {
+        background: var(--blue);
+        color: var(--white);
+        box-shadow: var(--box-shadow);
+    }
+    
+    .container .information {
+        flex: 1 1 1000px;
+        background: var(--white);
+        padding: 20px 30px;
+    }
+    
+    .container .information .about p {
+        font-size: 17px;
+        line-height: 2;
+        padding: 5px 0;
+        color: var(--light-color);
+    }
+    
+    .container .information .about .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .container .information .about .box-container .box {
+        flex: 1 1 200px;
+    }
+    
+    .container .information .about .box-container .box h3 {
+        font-size: 15px;
+        padding: 5px 0;
+        color: var(--back);
+    }
+    
+    .container .information .about .box-container .box h3 span {
+        color: var(--light-color);
+    }
+    
+    .container .information .services {
+        padding: 20px 0;
+    }
+    
+    .container .information .services .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .container .information .services .box {
+        flex: 1 1 17px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .container .information .services .html5 {
+        background: linear-gradient(107deg, rgba(227, 76, 38, 1) 30%, rgba(240, 101, 41, 1) 50%);
+    }
+    
+    .container .information .services .css3 {
+        background: linear-gradient(107deg, rgba(38, 77, 228, 1) 30%, rgba(41, 101, 241, 1) 50%);
+    }
+    
+    .container .information .services .js {
+        background: linear-gradient(107deg, rgba(240, 219, 79, 1) 70%, rgba(240, 219, 79, 1) 20%);
+    }
+    
+    .container .information .services .sass {
+        background: linear-gradient(107deg, rgba(204, 102, 153, 1) 30%, rgba(204, 102, 153, 1) 50%);
+    }
+    
+    .container .information .services .jquery {
+        background: linear-gradient(107deg, rgb(7, 105, 173, 1) 30%, rgba(7, 105, 173, 1) 50%);
+    }
+    
+    .container .information .services .react {
+        background: linear-gradient(107deg, rgba(124, 197, 217, 1) 30%, rgba(136, 221, 237, 1) 50%);
+    }
+    
+    .container .information .services .python {
+        background: linear-gradient(107deg, rgba(48, 105, 152, 1) 30%, rgba(255, 232, 115, 1) 50%);
+    }
+    
+    .container .information .services .django {
+        background: linear-gradient(107deg, rgba(9, 46, 32, 1) 30%, rgba(9, 46, 32, 1) 50%);
+    }
+    
+    .container .information .services .box i {
+        font-size: 50px;
+    }
+    
+    .container .information .services .box img {
+        height: 50px;
+    }
+    
+    .container .information .services .box h3 {
+        font-size: 15px;
+        color: var(--white);
+    }
+    
+    .container .information .experience {
+        margin: 20px 0;
+    }
+    
+    .container .information .experience .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .container .information .experience .box-container .box {
+        padding: 20px;
+        border-radius: 5px;
+        flex: 1 1 350px;
+        background: var(--light-bg);
+    }
+    
+    .container .information .experience .box-container .box span {
+        color: var(--blue);
+        font-size: 15px;
+    }
+    
+    .container .information .experience .box-container .box h3 {
+        color: var(--black);
+        font-size: 17px;
+        padding: 5px 0;
+    }
+    
+    .container .information .experience .box-container .box p {
+        color: var(--light-color);
+        line-height: 2;
+        font-size: 14px;
+    }
+    
+    .container .information .contact {
+        margin-top: 50px;
+    }
+    
+    .container .information .contact .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .container .information .contact .box-container .box {
+        flex: 1 1 200px;
+        display: flex;
+        align-self: flex-start;
+        gap: 10px;
+    }
+    
+    .container .information .contact .box-container .box i {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 15px;
+        border-radius: 50%;
+        background: var(--blue);
+        color: var(--white);
+        text-align: center;
+    }
+    
+    .container .information .contact .box-container .box h3 {
+        font-size: 17px;
+        color: var(--black);
+        padding-bottom: 5px;
+    }
+    
+    .container .information .contact .box-container .box p {
+        font-size: 14px;
+        color: var(--light-color);
+        line-height: 2;
+    }
+    
+    @media (max-width:1200px) {
+        .container {
+            flex-flow: column;
+            padding: 20px;
+            justify-content: center;
+        }
+        .container .profile {
+            position: static;
+            border-radius: 5px;
+            box-shadow: var(--box-shadow);
+            padding: 20px;
+            border-right: none;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .container .information {
+            border-radius: 5px;
+            box-shadow: var(--box-shadow);
+            padding: 20px;
+        }
+    }
+    
+    @media (max-width:450px) {
+        .container .profile {
+            width: 100%;
+        }
+        .container .profile .btn {
+            width: 100%;
+        }
+        .container .information .about p {
+            font-size: 12px;
+        }
+        .container .information .experience .box-container .box p {
+            font-size: 12px;
+        }
+    }
