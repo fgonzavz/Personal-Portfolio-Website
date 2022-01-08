@@ -114,6 +114,7 @@
         line-height: 2;
         padding: 5px 0;
         color: var(--light-color);
+        text-align: justify;
     }
     
     .container .information .about .box-container {
@@ -245,6 +246,7 @@
         color: var(--light-color);
         line-height: 2;
         font-size: 14px;
+        text-align: justify;
     }
     
     .container .information .contact {
